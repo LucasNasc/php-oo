@@ -9,6 +9,12 @@ class Pessoa {
 
     public $nome ;
     public $idade;
+
+    public function correr (){
+
+        echo "essa pessoa correu";
+
+    }
 }
 
 $pessoa1 = new Pessoa();
@@ -20,3 +26,5 @@ $pessoa2 = new Pessoa();
 
 $pessoa2->nome = "Nascimento";
 $pessoa2->idade = "29";
+
+echo $pessoa1->correr();
