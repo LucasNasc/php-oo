@@ -23,15 +23,11 @@ class Pessoa {
             echo ".";
 
         }
-        echo $this->nome." Terminou de Correr"
+        echo $this->nome." Terminou de Correr";
     }
 }
 
-$pessoa1 = new Pessoa("Lucas", "20");
 
-
-
-$pessoa2 = new Pessoa("lala","30");
 
 
 
