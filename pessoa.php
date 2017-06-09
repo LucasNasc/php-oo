@@ -10,10 +10,14 @@ class Pessoa {
     public $nome ;
     public $idade;
 
-    public function correr (){
+    public function correr ($km){
 
-        echo "essa pessoa correu";
+        echo $this->nome." está Correndo";
+        for ($i = 0 ; $km >$i; $i++){
+            echo ".";
 
+        }
+        echo $this->nome." Terminou de Correr"
     }
 }
 
