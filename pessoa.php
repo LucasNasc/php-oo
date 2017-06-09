@@ -10,6 +10,12 @@ class Pessoa {
     public $nome ;
     public $idade;
 
+    public function __construct($nome, $idade){
+
+        $this->nome = $nome;
+        $this->idade = $idade;
+    }
+
     public function correr ($km){
 
         echo $this->nome." está Correndo";
@@ -21,14 +27,11 @@ class Pessoa {
     }
 }
 
-$pessoa1 = new Pessoa();
+$pessoa1 = new Pessoa("Lucas", "20");
 
-$pessoa1->nome ="lucas";
-$pessoa1->idade = "18";
 
-$pessoa2 = new Pessoa();
 
-$pessoa2->nome = "Nascimento";
-$pessoa2->idade = "29";
+$pessoa2 = new Pessoa("lala","30");
 
-echo $pessoa1->correr();
+
+
